@@ -1,0 +1,45 @@
+{
+    "source": {
+        "include": ["./src/assessment/js/"],
+        "exclude": [],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "opts": {
+        "template": "node_modules/tui-jsdoc-template",
+        "encoding": "utf8",
+        "destination": "./doc/",
+        "recurse": true,
+        "tutorials": "./src/samples"
+    },
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "templates": {
+        "name": "JS Documentation",
+        "footerText": "By CrossKnowledge",
+        "logo": {
+            "url": "/images/teamshift-logo-mobile.svg",
+            "width": "150px",
+            "height": "30px",
+            "link": "https://teamshift.crossknowledge.com"
+        },
+        "tabNames": {
+            "api": "API",
+            "tutorials": "Examples"
+        },
+        "useCollapsibles": true,
+        "default": {
+            "useLongnameInNav": true,
+            "staticFiles": {
+                "include": ["static/", "src/assessment/"]
+            },
+            "css": [
+                "styles/custom.css"
+            ]
+        }
+
+    }
+}
+
